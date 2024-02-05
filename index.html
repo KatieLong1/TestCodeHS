@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Basic Scene</title>
+
+	<head>
+		<!--Installing A-Frame-->
+		<script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
+		<script src="//cdn.rawgit.com/donmccurdy/aframe-extras/v5.0.0/dist/aframe-extras.min.js"></script>
+
+		<script src="https://unpkg.com/aframe-animation-component@^5.1.2/dist/aframe-animation-component.min.js"></script>
+	</head>
+</head>
+
+<body>
+	<!-- Code your scene here-->
+	<a-scene>
+		<!--music-->
+		<a-sound src='sound/rain.mp3' autoplay="true" position="0 2 5"></a-sound>
+		<!--sky/ image-->
+		<a-sky src="Images/rockFormation.jpg">
+		</a-sky>
+		<!--Text-->
+		<a-text position="-2 2 -3" rotation="0 10 0" width="4" color="white" value="my text"></a-text>
+		<!--shapes/ objects-->
+		<a-box color="purple" position="0 0 -4" scale="1 1 1"> </a-box>
+			<a-box color="pink" position="-9 0 -10"></a-box>
+		<!--camera controls-->
+		<a-entity camera look-controls wasd-controls position="0 1.6 0"></a-entity>
+	</a-scene>
+</body>
+
+</html>
